@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Context.CONNECTIVITY_SERVICE
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.os.Build
 import android.util.DisplayMetrics
 
 fun Context?.isNetworkAvailable(): Boolean =

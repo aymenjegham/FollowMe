@@ -1,10 +1,9 @@
 plugins {
     kotlin("kapt")
-    id ("com.android.library")
-    id ("org.jetbrains.kotlin.android")
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
-    id ("com.google.gms.google-services")
-    id("com.google.firebase.crashlytics")
+//    id("com.google.gms.google-services")
 }
 
 android {
@@ -73,6 +72,11 @@ dependencies {
     testImplementation("androidx.room:room-testing:$roomVersion")
     implementation("androidx.room:room-paging:$roomVersion")
 
+    //Paging 3
+    val pagingVersion = "3.1.1"
+    implementation("androidx.paging:paging-runtime:$pagingVersion")
+    implementation ("androidx.paging:paging-compose:1.0.0-alpha17")
+
 
     //Gson
     implementation("com.google.code.gson:gson:2.9.0")
@@ -81,18 +85,19 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.71828")
 
     //Retrofit2
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     // OkHttp3 logging-interceptor
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
 
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:31.0.0"))
 
     // Declare the dependency for the Crashlytics library
-    implementation ("com.google.firebase:firebase-crashlytics-ktx")
+//    implementation("com.google.firebase:firebase-crashlytics-ktx")
 
+    implementation("androidx.work:work-runtime-ktx:2.7.1")
 }
 
 kapt {

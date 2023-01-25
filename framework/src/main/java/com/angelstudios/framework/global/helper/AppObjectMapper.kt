@@ -4,7 +4,7 @@ package com.angelstudios.framework.global.helper
 
 import com.angelstudios.core.domain.point.Point
 import com.angelstudios.core.domain.user.User
-import com.angelstudios.core.helper.ObjectMapper
+import com.angelstudios.core.global.helper.ObjectMapper
 import com.angelstudios.framework.entity.point.PointEntity
 import com.angelstudios.framework.entity.user.UserEntity
 import com.google.gson.Gson

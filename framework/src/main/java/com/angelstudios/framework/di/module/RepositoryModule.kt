@@ -1,6 +1,8 @@
 package com.angelstudios.framework.di.module
 
 
+import com.angelstudios.core.data.repository.point.PointRepository
+import com.angelstudios.core.data.repository.point.PointRepositoryImpl
 import com.angelstudios.core.data.repository.user.UserRepository
 import com.angelstudios.core.data.repository.user.UserRepositoryImpl
 import dagger.Binds
@@ -17,5 +19,9 @@ abstract class RepositoryModule {
     @Singleton
     @Binds
     abstract fun bindsUserRepository(userRepository: UserRepositoryImpl) : UserRepository
+
+    @Singleton
+    @Binds
+    abstract fun bindsPointRepository(pointRepository : PointRepositoryImpl) : PointRepository
 
 }

@@ -6,15 +6,13 @@ import android.os.SystemClock
 import com.google.android.gms.location.*
 import com.google.android.gms.tasks.CancellationTokenSource
 import com.google.android.gms.tasks.Tasks
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.ConflatedBroadcastChannel
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 import kotlin.coroutines.resume
 
-@InstallIn(SingletonComponent::class)
+
 class LocationManager @Inject constructor(private val locationProvider: FusedLocationProviderClient) :
     LocationCallback() {
 

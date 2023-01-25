@@ -3,12 +3,12 @@ package com.angelstudios.framework.di.module
 
 import android.content.Context
 import com.angelstudios.framework.dataSource.api.EndpointInterceptor
+import com.angelstudios.framework.di.qualifiers.PicassoHttpClient
 import com.angelstudios.framework.global.constants.CONNECT_TIMEOUT
 import com.angelstudios.framework.global.constants.OKHTTP_CACHE_FILE_NAME
 import com.angelstudios.framework.global.constants.READ_TIMEOUT
 import com.angelstudios.framework.global.constants.WRITE_TIMEOUT
 import com.angelstudios.framework.global.helper.DebugLog
-import com.angelstudios.framework.di.qualifiers.PicassoHttpClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

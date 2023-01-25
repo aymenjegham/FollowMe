@@ -3,10 +3,10 @@ package com.angelstudios.framework.database.dao.syncro
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Transaction
-import com.angelstudios.framework.entity.syncro.SyncroDataEntity
-import com.angelstudios.framework.entity.syncro.SyncroEntity
 import com.angelstudios.framework.database.dao.BaseDao
 import com.angelstudios.framework.entity.BaseEntity
+import com.angelstudios.framework.entity.syncro.SyncroDataEntity
+import com.angelstudios.framework.entity.syncro.SyncroEntity
 import com.google.gson.Gson
 
 

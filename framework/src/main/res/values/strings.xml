@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Follow Me</string>
+    <string name="chanel_info">"this is the main channel"</string>
+    getString(R.string.app_name)
+    <string name="notif_content">"Follow me is collectiong Geolocation data even when it is in the background</string>
+    <string name="main_channel">"this is follow me main channel , all the notifications will be linked to this channel"</string>
+</resources>

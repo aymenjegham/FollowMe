@@ -3,7 +3,7 @@ plugins {
     id ("com.android.application")
     id ("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
-    id("com.google.firebase.crashlytics")
+  //  id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -61,6 +61,10 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.3.3")
     implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")
     implementation("androidx.compose.material3:material3:1.1.0-alpha04")
+    implementation(project(mapOf("path" to ":core")))
+    implementation(project(mapOf("path" to ":framework")))
+    implementation("androidx.compose.material:material:1.3.1")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 
 
     testImplementation("junit:junit:4.13.2")
@@ -93,8 +97,6 @@ dependencies {
     // Declare the dependency for the Crashlytics library
     implementation ("com.google.firebase:firebase-crashlytics-ktx")
 
-    implementation ("androidx.compose.material:material-icons-extended:1.3.1")
-
 
 
     testImplementation( "junit:junit:4.13.2")
@@ -116,6 +118,7 @@ dependencies {
     //implementation("com.google.accompanist:accompanist-permissions:0.28.0")
 
     implementation("com.google.accompanist:accompanist-permissions:0.28.0")
+
 
 
 

@@ -11,8 +11,8 @@ import com.google.gson.annotations.SerializedName
 abstract class BaseEntity(
 
     @PrimaryKey
-    @ColumnInfo(name = "ID")
-    @SerializedName("ID")
+    @ColumnInfo(name = "id")
+    @SerializedName("id")
     @Expose
     val id: String
 

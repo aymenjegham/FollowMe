@@ -3,7 +3,6 @@ package com.angelstudios.core.data.repository.point
 
 import com.angelstudios.core.data.dataSource.point.LocationDataSource
 import com.angelstudios.core.data.dataSource.point.PointDatabase
-import com.angelstudios.core.data.repository.point.PointRepository
 import com.angelstudios.core.domain.point.Point
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

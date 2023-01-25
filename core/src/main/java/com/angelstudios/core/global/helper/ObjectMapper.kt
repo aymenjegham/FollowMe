@@ -1,4 +1,4 @@
-package com.angelstudios.core.helper
+package com.angelstudios.core.global.helper
 
 import com.google.gson.Gson
 import kotlin.reflect.KClass

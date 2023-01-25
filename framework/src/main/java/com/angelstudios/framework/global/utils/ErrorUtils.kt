@@ -1,10 +1,10 @@
 package com.angelstudios.framework.global.utils
 
 
+import com.angelstudios.core.domain.Error
 import retrofit2.Response
 import retrofit2.Retrofit
 import java.io.IOException
-import com.angelstudios.core.domain.Error
 
 object ErrorUtils {
 

@@ -3,7 +3,6 @@ package com.angelstudios.framework.entity.point
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
-import androidx.room.PrimaryKey
 import com.angelstudios.framework.entity.BaseEntity
 import com.angelstudios.framework.entity.syncro.SyncroDataType
 import com.angelstudios.framework.entity.syncro.SyncroEntity
